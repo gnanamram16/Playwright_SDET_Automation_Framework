@@ -17,7 +17,7 @@ public class ApiUtils {
     }
  
     public static APIResponse postRequest(String url, String data) {
-        return request.post(url, APIRequest.NewContextOptions().setData(data));
+        return request.post(url, new APIRequest.NewContextOptions().setData(data));
     }
  
     public static void close() {
